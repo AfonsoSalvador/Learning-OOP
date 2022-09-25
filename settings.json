@@ -36,9 +36,9 @@
 
             "statusBar.background": "#000000",
             "statusBarItem.remoteBackground": "#0f7bf7",
-            "statusBarItem.remoteForeground": "#ffffff"
+            "statusBarItem.remoteForeground": "#ffffff",
 
-
+            "terminal.background": "#0c0c0c"
         
 
             

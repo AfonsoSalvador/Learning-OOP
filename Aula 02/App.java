@@ -1,7 +1,7 @@
 public class App {
 
     public static void imprimeEmpresa(Empresa em){
-        System.out.printf("%s LTDA\n\nCusto total: %.02f\nSalario médio: %.02f\n\n",em.getNome(),em.GetCustoEmpresa(),em.getSalarioMedio());
+        System.out.printf("%s LTDA\n\nCusto total: %.02f\nSalario médio: %.02f\nNúmero de funcionários: %d\n\n",em.getNome(),em.GetCustoEmpresa(),em.getSalarioMedio(), em.getNumFuncionarios());
         for(Departamento d : em.getDepartamentosEmpresa()){
             System.out.print(d.toString());
         }
@@ -21,7 +21,7 @@ public class App {
         Departamento ti = new Departamento("Tecnologia da Informação");
         Departamento ve = new Departamento("Vendas");
 
-        Empresa em = new Empresa("Montanhas do Lado Salgado");
+        Empresa em = new Empresa("Montanhas do Lago Salgado");
 
         rh.addFuncionario(f6);
         rh.addFuncionario(f5);
