@@ -7,12 +7,14 @@ public class ContaPlus extends Conta{
     }
 
     @Override
-    public void sacaValor(double valor) {
-        super.setSaldo(super.getSaldo()-(valor+(valor*0.01)));
+    public double sacaValor(double valor) {
+        double taxa=valor*0.01;
+        super.setSaldo(super.getSaldo()-(valor+taxa));
+        return taxa;
     }
 
     @Override
     public String toString() {
-        return "Super" + super.toString();
+        return "Super " + super.toString();
     }
 }

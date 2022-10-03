@@ -21,13 +21,15 @@ public class Conta {
         saldo+=valor;
     }
 
-    public void sacaValor(double valor){
-        saldo-=(valor+(valor*0.05));
+    public double sacaValor(double valor){
+        double taxa = valor*0.05;
+        saldo-=(valor+taxa);
+        return taxa;
     }
 
     @Override
     public String toString() {
-        return "Cliente\t\nNome:"+nomeCliente+"\n\tSaldo: R$"+ String.format("%.2f",getSaldo())+ "\n";
+        return "Cliente\n\tNome:"+nomeCliente+"\n\tSaldo: R$"+ String.format("%.2f",getSaldo())+ "\n";
     }
     
     
