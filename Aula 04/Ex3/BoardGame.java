@@ -17,6 +17,10 @@ public class BoardGame extends Produto {
         this.idadeMínima = idadeMínima;
     }
 
+    @Override
+    public String toString() {
+        return "Jogo de Tabuleiro:\n\tNome:"+ getNome()+ "\n\tPreço: R$" + String.format("%.2f", getPreço())+"\n";
+    }
     
 
 }
