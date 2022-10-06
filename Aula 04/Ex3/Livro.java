@@ -16,6 +16,6 @@ public class Livro extends Produto{
 
     @Override
     public String toString() {
-        return "Livro:\n\tTítulo:"+ getNome()+"\n\tAutor:" +getAutor() +"\n\tPreço: R$" + String.format("%.2f", getPreço())+"\n";
+        return "Livro:\n\tAutor:" +getAutor() +super.toString()+"\n";
     }
 }

@@ -23,5 +23,9 @@ public abstract class Produto {
         this.preço = preço;
     }
 
+    @Override
+    public String toString() {
+        return "\tNome: "+ getNome() + "\n\t Preço : R$" + String.format("%.2f", getPreço());
+    }
     
 }
