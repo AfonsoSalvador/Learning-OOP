@@ -1,0 +1,23 @@
+
+    
+    @startuml diagrama
+    Pessoa <|-- Funcionario
+    Funcionario <|-- FuncionarioTempoParcial
+    Funcionario <|-- FuncionarioTempoIntegral
+    Funcionario <-> "0..1" Sala : ocupa >
+    
+   
+    class Funcionario{
+        salario : double
+    }
+
+    class Pessoa {
+
+        nome : String
+        cpf : int
+        nascimento : LocalDate
+    }
+
+
+
+    @enduml

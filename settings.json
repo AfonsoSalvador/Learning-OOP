@@ -9,6 +9,14 @@
 
 
 
+        {
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Dracula",
+    "workbench.colorCustomizations": {
+
+
+
+
         "[Dracula]": {
             "editor.background": "#0c0c0c",
             "editor.selectionBackground": "#1b1b1b",
@@ -21,10 +29,10 @@
             
             
 
-            "tab.activeBackground": "#0c0c0c",
+            "tab.activeBackground": "#272727",
             "tab.hoverBackground": "#302e2e",
             "tab.activeForeground": "#ffffff",
-            "tab.inactiveBackground": "#272727",
+            "tab.inactiveBackground": "#0c0c0c",
             "tab.border": "#000000",
             "tab.hoverForeground": "#ffffff",
             "tab.inactiveForeground": "#ffffff",
@@ -46,4 +54,5 @@
         }
         
     }
+}
 }
