@@ -69,7 +69,7 @@ public class Camisa {
 
     @Override
     public String toString() {
-        return "\tCamisa " + cor + "\n\tQuatidade:" + quantidade + "\n\tPreço: R$" + String.format("%.2d", preço_base)
+        return "\tCamisa " + cor + "\n\tQuatidade:" + quantidade + "\n\tPreço: R$" + String.format("%.2f", preço_base)
                 + " (" + ((desconto * 100) - 100) + "% de desconto\n";
     }
 }

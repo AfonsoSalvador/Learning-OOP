@@ -8,8 +8,8 @@ public class Loja {
     private String nome;
     private double caixa;
 
-    public Loja(List<Camisa> estoque, String nome) {
-        this.estoque = estoque;
+    public Loja(String nome) {
+        this.estoque = new LinkedList<Camisa>();
         this.nome = nome;
         caixa = 0;
     }
@@ -31,8 +31,10 @@ public class Loja {
     }
 
     public void listaEstoque() {
+        int index=0;
         for (Camisa c : estoque) {
-            System.out.println(c);
+            System.out.println(index+ " - "+ c);
+            index++;
         }
     }
 
@@ -43,11 +45,11 @@ public class Loja {
     }
 
     public Double vendeCamisa(int index, int qtd) {
-        Camisa compra = estoque.get(index);
-        if (compra == null) {
-            System.out.println("endereço inválido");
+        if(index>=estoque.size()){
+            System.out.println("Posição inválida");
             return null;
         }
+        Camisa compra = estoque.get(index);
         Double valor;
         valor = compra.vendeCamisa(qtd);
         if (compra.getQuantidade() == 0) {
@@ -59,7 +61,7 @@ public class Loja {
 
     @Override
     public String toString() {
-        return "Loja " + nome + "\ncaixa atual: R$" + String.format("%.2d", caixa) + "\n";
+        return "Loja " + nome + "\ncaixa atual: R$" + String.format("%.2f", caixa) + "\n";
     }
 
 }
